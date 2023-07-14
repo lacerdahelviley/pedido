@@ -3,8 +3,8 @@ import style from "./style.module.css";
 
 export default function Pedido() {
   const [buttonPosition, setButtonPosition] = useState({
-    left: "60%",
-    top: "50%",
+    left: "55%",
+    top: "62%",
   });
 
   const handleButtonClick = () => {
@@ -26,14 +26,16 @@ export default function Pedido() {
     <div className={style.container_pedido}>
       <div className={style.corpo_pedido}>
         <div className={style.container_titulo}>
-          <p className={style.text}>
-            Seguindo para o ponto que realmente importa....
-          </p>
+          <p className={style.text}>Indo ao que realmente importa...</p>
         </div>
-        <div className={style.container_pedido_botoes}>
-          <h2>Você quer namorar comigo?</h2>
-          <div className={style.container_botoes}>
-            <button className={style.botao_aceito}>Claro, com certeza que eu quero!!</button>
+        <div className={style.pedido}>
+          <img className={style.image} src={`${process.env.PUBLIC_URL}/assets/player.png`} alt="" />
+          <h2>Você quer ser minha player 1?</h2>
+        </div>
+        <div className={style.container_botoes}>
+            <button className={style.botao_aceito}>
+              Claro, com certeza que eu quero!!
+            </button>
             <button
               style={{
                 position: "absolute",
@@ -46,14 +48,13 @@ export default function Pedido() {
                 border: "none",
                 borderRadius: "10px",
                 cursor: "pointer",
-                padding: "5px"
+                padding: "5px",
               }}
               onClick={handleButtonClick}
             >
               Sai pra lá, doido.
             </button>
           </div>
-        </div>
       </div>
     </div>
   );

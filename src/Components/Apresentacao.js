@@ -1,19 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import style from "./style.module.css"
+import style from "./style.module.css";
+import Imagens from "./Imagens";
 
 export default function Apresentacao() {
-    const getGreeting = () => {
-        const currentHour = new Date().getHours();
-    
-        if (currentHour >= 6 && currentHour < 12) {
-          return 'bom dia';
-        } else if (currentHour >= 12 && currentHour < 18) {
-          return 'boa tarde';
-        } else {
-          return 'boa noite';
-        }
-      };
+  const getGreeting = () => {
+    const currentHour = new Date().getHours();
+
+    if (currentHour >= 6 && currentHour < 12) {
+      return "bom dia";
+    } else if (currentHour >= 12 && currentHour < 18) {
+      return "boa tarde";
+    } else {
+      return "boa noite";
+    }
+  };
   return (
     <div className={style.container_apresentacao}>
       <div className={style.corpo_apresentacao}>
@@ -32,9 +33,20 @@ export default function Apresentacao() {
           da experiência maravilhosa que ambos estamos vivendo. Enfim, falei
           bastante para alguém que pretendia apenas fazer uma pergunta...
         </p>
+        <iframe
+         className={style.iframe}
+          src="https://www.youtube.com/embed/rjAx8aae5pY"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
         <button className={style.link}>
           <Link to="/pedido">continue lendo..</Link>
         </button>
+      </div>
+      <div className={style.container_imagens}>
+        <Imagens />
       </div>
     </div>
   );
