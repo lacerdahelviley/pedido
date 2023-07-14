@@ -22,6 +22,11 @@ export default function Pedido() {
 
     setButtonPosition({ left: newLeft + "px", top: newTop + "px" });
   };
+
+  const sucesso = () => {
+    alert("Sucesso bebê, agora vamos zerar vários jogos e também a vida. Hehe")
+  }
+
   return (
     <div className={style.container_pedido}>
       <div className={style.corpo_pedido}>
@@ -33,7 +38,7 @@ export default function Pedido() {
           <h2>Você quer ser minha player 1?</h2>
         </div>
         <div className={style.container_botoes}>
-            <button className={style.botao_aceito}>
+            <button className={style.botao_aceito} onClick={sucesso}>
               Claro, com certeza que eu quero!!
             </button>
             <button
