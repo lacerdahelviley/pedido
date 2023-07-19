@@ -30,11 +30,15 @@ export default function Apresentacao() {
           Gosto de como me perco no seu olhar e sorriso, dos abraços que nos
           envolvem, do sabor maravilhoso dos seus beijos e, principalmente, de
           como nos damos bem. Acredito que isso não se trata de tempo, mas sim
-          da experiência maravilhosa que ambos estamos vivendo. Enfim, falei
-          bastante para alguém que pretendia apenas fazer uma pergunta...
+          da experiência maravilhosa que ambos estamos vivendo.
+        </p>
+        <p className={style.text}>
+          Parafraseando Carl Segan, "Diante da vastidão do tempo e da imensidão
+          do universo, é um imenso prazer para mim dividir um planeta e uma
+          época com você."
         </p>
         <iframe
-         className={style.iframe}
+          className={style.iframe}
           src="https://www.youtube.com/embed/rjAx8aae5pY"
           title="YouTube video player"
           frameborder="0"
