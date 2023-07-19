@@ -37,6 +37,11 @@ export default function Apresentacao() {
           do universo, é um imenso prazer para mim dividir um planeta e uma
           época com você."
         </p>
+        <button className={style.link}>
+          <Link to="/pedido">continue lendo...</Link>
+        </button>
+        <br />
+        <br />
         <iframe
           className={style.iframe}
           src="https://www.youtube.com/embed/rjAx8aae5pY"
@@ -45,9 +50,6 @@ export default function Apresentacao() {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <button className={style.link}>
-          <Link to="/pedido">continue lendo..</Link>
-        </button>
       </div>
       <div className={style.container_imagens}>
         <Imagens />
