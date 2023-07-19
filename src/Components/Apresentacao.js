@@ -46,9 +46,9 @@ export default function Apresentacao() {
           className={style.iframe}
           src="https://www.youtube.com/embed/t3LtBhYPXQ0"
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
       <div className={style.container_imagens}>
